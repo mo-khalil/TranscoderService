@@ -1,5 +1,5 @@
-1080 > -i "##INPUT##" -o "##OUTPUT##" -O -I -e x264 -q 14 -x level=3.1:ref=5:b-adapt=2:vbv-bufsize=12000:vbv-maxrate=6000 -E ac3 -R 44.1 -l 1080
-720 > -i "##INPUT##" -o "##OUTPUT##" -O -I -e x264 -q 18 -x level=3.1:ref=5:b-adapt=2:vbv-bufsize=10000:vbv-maxrate=5000 -E ac3 -R 44.1 -l 720
-480 > -i "##INPUT##" -o "##OUTPUT##" -O -I -e x264 -q 24 -x level=3.1:ref=5:b-adapt=2:vbv-bufsize=8000:vbv-maxrate=4000 -E ac3 -R 44.1 -l 480
-380 > -i "##INPUT##" -o "##OUTPUT##" -O -I -e x264 -q 28 -x level=3.1:ref=5:b-adapt=2:vbv-bufsize=6000:vbv-maxrate=300 -E ac3 -R 44.1 -w 512
-240 > -i "##INPUT##" -o "##OUTPUT##" -O -I -e x264 -q 32 -x level=3.1:ref=5:b-adapt=2:vbv-bufsize=4000:vbv-maxrate=200 -E ac3 -R 44.1 -l 320
+1080 > -i "##INPUT##" -o "##OUTPUT##" -O -I -r 25 -e x264 -q 14 -x level=3.1:ref=5:b-adapt=2:vbv-bufsize=14000:vbv-maxrate=7000:min-keyint=30:keyint=30 -E av_aac -R 44.1 -l 1080
+720 > -i "##INPUT##" -o "##OUTPUT##" -O -I -r 25 -e x264 -q 18 -x level=3.1:ref=5:b-adapt=2:vbv-bufsize=12000:vbv-maxrate=6000:min-keyint=30:keyint=30 -E av_aac -R 44.1 -l 720
+480 > -i "##INPUT##" -o "##OUTPUT##" -O -I -r 25 -e x264 -q 24 -x level=3.1:ref=5:b-adapt=2:vbv-bufsize=10000:vbv-maxrate=5000:min-keyint=30:keyint=30 -E av_aac -R 44.1 -l 480
+384 > -i "##INPUT##" -o "##OUTPUT##" -O -I -r 25 -e x264 -q 28 -x level=3.1:ref=5:b-adapt=2:vbv-bufsize=8000:vbv-maxrate=600:min-keyint=30:keyint=30 -E av_aac -R 44.1 -w 512
+240 > -i "##INPUT##" -o "##OUTPUT##" -O -I -r 25 -e x264 -q 32 -x level=3.1:ref=5:b-adapt=2:vbv-bufsize=6000:vbv-maxrate=400:min-keyint=30:keyint=30 -E av_aac -R 44.1 -w 320
